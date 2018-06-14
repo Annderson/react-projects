@@ -1,20 +1,5 @@
 import Pessoa from './logger';
-//logger.info('Testando 1 2 3');
-import 'react'
+import 'react';
+import './estilo.css'
 
-export
-
-const produto = {
-    nome: 'Caneta Azul',
-    preco: 2.90,
-    desconto: 0.50,
-}
-
-function clone(obj) {
-    return {...obj }
-}
-
-const novoProduto = clone(produto)
-novoProduto.nome = 'Caneta verde'
-
-console.log(produto, novoProduto)
+export default prosp => ( < h1 > UUUoolllll < /h1 > )
