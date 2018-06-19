@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PageHeader from '../template/page-header'
+import PageHeader from '../template-html/page-header'
 
 export default class About extends Component{
     render(){

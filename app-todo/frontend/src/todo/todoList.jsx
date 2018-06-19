@@ -1,5 +1,5 @@
 import React from 'react'
-import IconButton from '../template/iconButton'
+import IconButton from '../template-html/iconButton'
 
 export default props => {
 
@@ -7,7 +7,9 @@ export default props => {
         const list = props.list || [];
         return list.map(todo => (
             <tr key={todo._id}>
-                <td className={todo.done ? 'maskTask' : ''}>{todo.description}</td>
+                <td className={todo.done ? 'maskTask' : ''}>
+                    {todo.description}
+                </td>
                 <td >
                     <IconButton style='success' icon='check' hide={todo.done}
                         onClick={() => props.handleMarkTask(todo)}></IconButton>
@@ -25,7 +27,7 @@ export default props => {
             <thead>
                <tr>
                    <th>Tarefas</th>
-                   <th>Ações</th>
+                   <th className="col-action">Ações</th>
                 </tr>
             </thead>
             <tbody>

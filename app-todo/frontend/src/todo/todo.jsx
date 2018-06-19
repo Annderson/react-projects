@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-import PageHeader from '../template/page-header'
+import PageHeader from '../template-html/page-header'
 import TodoForm from './todoForm'
 import TodoList from './todoList'
 
@@ -26,6 +26,12 @@ export default class Todo extends Component{
         this.refresh()
     }
 
+    refresh(description){
+        const search = description ? '&description__regex=/'+description+'/' : ''
+        axios.get(URL+'?sort='+search)
+             .then(resp => this.setState({...this.state, description, list: resp.data}))
+    }
+
     handleChange(event){
         this.setState({...this.state, desc: event.target.value})
     }
@@ -34,34 +40,30 @@ export default class Todo extends Component{
         const description = this.state.desc
         axios.post(URL, {description})
              .then(resp => this.refresh())
+        this.setState({desc: ''})
     }
 
     handleSearch(){
         this.refresh(this.state.desc)
     }
 
-    handleClear(){
-
+    handleClear() {
+        this.refresh()
+        this.setState({desc: ''})
     }
 
     handleRemove(todo){
         axios.delete(URL+'/'+todo._id)
-             .then(reso => this.refresh())
+             .then(reso => this.refresh(this.state.desc))
     }  
 
     handleMarkTask(todo){
         axios.put(URL+'/'+todo._id, {todo, done: true})
-             .then(resp => this.refresh())
+             .then(resp => this.refresh(this.state.desc))
     }
     handleMarkPending(todo){
         axios.put(URL+'/'+todo._id, {todo, done: false})
-             .then(resp => this.refresh())
-    }
-
-    refresh(desc = ''){
-        const search = desc ? '&description__regex=/'+desc+'/' : ''
-        axios.get(URL+'?sort='+search)
-             .then(resp => this.setState({...this.state, description: '', list: resp.data}))
+             .then(resp => this.refresh(this.state.desc))
     }
 
     render(){

@@ -3,7 +3,7 @@ import 'modules/font-awesome/css/font-awesome.min.css'
 import '../template-css/style-list.css'
 
 import React from 'react'
-import  Menu from '../template/menu'
+import  Menu from '../template-html/menu'
 import Routes from './routes'
 
 

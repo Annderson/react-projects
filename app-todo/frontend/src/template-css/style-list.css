@@ -4,9 +4,13 @@
 }
 
 .btn {
-    margin: 0px 5px;
+    margin: 0px 2px;
 }
 
-.td-sty {
-    margin: 30px;
+.space {
+    margin-bottom: 50px;
+}
+
+.col-action {
+    width: 150px;
 }
