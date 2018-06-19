@@ -17,6 +17,9 @@ export default props =>(
                 <IconButton style='info' icon='search' 
                             onClick={props.handleSearch}>
                 </IconButton>
+                <IconButton style='danger' icon='close' 
+                            onClick={props.handleClear}>
+                </IconButton>
             </div>
         </form>
     </div>

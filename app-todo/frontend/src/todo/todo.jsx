@@ -15,8 +15,10 @@ export default class Todo extends Component{
         this.state = { desc: '', list: [] }
 
         this.handleAdd = this.handleAdd.bind(this)
+        this.handleClear = this.handleClear.bind(this)
         this.handleSearch = this.handleSearch.bind(this)
         this.handleChange = this.handleChange.bind(this)
+
         this.handleRemove = this.handleRemove.bind(this)
         this.handleMarkTask = this.handleMarkTask.bind(this)
         this.handleMarkPending = this.handleMarkPending.bind(this)
@@ -36,6 +38,10 @@ export default class Todo extends Component{
 
     handleSearch(){
         this.refresh(this.state.desc)
+    }
+
+    handleClear(){
+
     }
 
     handleRemove(todo){
@@ -63,8 +69,9 @@ export default class Todo extends Component{
            <div>
                <PageHeader name='Cadastro' small='de tarefas'/>
                <TodoForm desc={this.state.desc}
-                    handleChange={this.handleChange}
                     handleAdd={this.handleAdd}
+                    handleClear={this.handleClear}
+                    handleChange={this.handleChange}
                     handleSearch={this.handleSearch}/>
                 <TodoList className="tb-sty" list={this.state.list}
                     handleRemove={this.handleRemove} 
