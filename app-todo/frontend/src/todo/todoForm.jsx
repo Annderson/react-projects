@@ -1,4 +1,5 @@
 import React from 'react'
+import IconButton from '../template-html/iconButton'
 
 export default props =>(
     <div role="form" className="">
@@ -7,12 +8,15 @@ export default props =>(
                 <input type="text" value={props.desc}
                         onChange={props.handleChange}
                         className="form-control" 
-                        placeholder="digite o nome da tarefa"/>
+                        placeholder="Busque ou adcione uma tarefa"/>
             </div>
             <div className="col-xs-3 col-sm-2 col-md-2">
-                <button className="btn btn-success" onClick={props.handleAdd}>
-                    <i className="fa fa-plus"></i> 
-                </button> 
+                <IconButton style='success' icon='plus' 
+                            onClick={props.handleAdd}>
+                </IconButton>
+                <IconButton style='info' icon='search' 
+                            onClick={props.handleSearch}>
+                </IconButton>
             </div>
         </form>
     </div>
