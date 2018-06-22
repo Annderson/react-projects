@@ -4,15 +4,19 @@ import LoginRight from './login-right';
 
 
 class Login extends Component {
+
+    constructor(props){
+        super(props)
+    }
+
     render(){
-        <div className="row">
-            <div className="col-md-6 col-lg-6">
+        return(
+            <div >
                 <LoginRight />
-            </div>
-            <div className="col-md-6 col-lg-6">
                 <LoginLeft />
-            </div> 
-        </div>
+            </div>
+        )
+        
     }
 }
 

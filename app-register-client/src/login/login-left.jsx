@@ -1,23 +1,22 @@
 import React from 'react'
 
-export default props => {
-    return (
+export default props => 
+(
         <form className="">
-            <div className="form-group">
-                <label className="label-camp">Username</label> <br/>
-                <input type="text" className="field-sizes" />
+            <div className="">
+                <label className="">Username</label> <br/>
+                <input type="text" className="" />
             </div>
-            <div className="form-group">
-                <label className="label-camp">Senha</label> <br/>
-                <input type="password" class="field-sizes" />
+            <div className="">
+                <label className="">Senha</label> <br/>
+                <input type="password" className="" />
             </div>
             
             <br/>
-            <div className="form-group">
-                <a className="btn btn-lg btn-success">
+            <div className="">
+                <a className="">
                     <strong>Entrar</strong>
                 </a>
             </div>
         </form>
-    )
-}
+)

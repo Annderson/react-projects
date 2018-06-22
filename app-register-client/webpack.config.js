@@ -1,4 +1,6 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
     entry: [
@@ -10,6 +12,12 @@ module.exports = {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: ['babel-loader']
+        }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        }, {
+            test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
+            loader: 'file'
         }]
     },
     resolve: {
@@ -21,7 +29,8 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new ExtractTextPlugin('app.css')
     ],
     devServer: {
         port: 8585,
