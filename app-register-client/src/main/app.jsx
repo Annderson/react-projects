@@ -1,0 +1,12 @@
+import '../style/login.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/font-awesome/css/font-awesome.min.css'
+
+import React from 'react'
+import Login from '../login/login'
+
+export default props => (
+    <div className="body-login">
+        <Login />
+    </div>
+)
