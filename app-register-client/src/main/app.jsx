@@ -11,8 +11,9 @@ export default props => (
     <div className="body-login">
        <BrowserRouter >
            <Switch>
-               <Route exact={true} path='/' component={Login}></Route>
-               <Route path='/lista' component={Lista}></Route>
+               <Route exact={true} path='/' component={Login}/>
+               <Route path='/lista' component={Lista}/>
+               <Redirect  to="/"/>
             </Switch>  
         </BrowserRouter>
     </div>

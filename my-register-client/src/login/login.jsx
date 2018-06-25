@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import LoginRight from './login-right';
 import LoginLeft from './login-left';
 
+import './login.css'
+
 
 class Login extends Component {
 

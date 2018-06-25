@@ -19,8 +19,7 @@ export default props =>
         <br/>
         <Link className="btn btn-primary btn-lg"
             to="/lista">
-            <span className="fa fa-laptop"></span>&ensp;
-            <strong> Sign in</strong>         
+             Sign in  <span className="fa fa-laptop"></span>     
         </Link>
     </form>
 )
