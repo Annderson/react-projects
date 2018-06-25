@@ -18,19 +18,13 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
             {
-                test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
+                test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
                 loader: 'file-loader'
             }
-            /*,
-                        {
-                            test: /\.png|jpg$/,
-                            include: __dirname + '/img',
-                            loader: ['file-loader']
-                        }*/
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx', '.gif', '.png', 'jpg']
+        extensions: ['*', '.js', '.jsx']
     },
     output: {
         path: __dirname + '/public',

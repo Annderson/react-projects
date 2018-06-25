@@ -1,14 +1,15 @@
 import React from 'react'
-import { Router, Redirect, hashHistory } from 'react-router'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Switch, Route, Redirect } from 'react-router-dom'
 
-import Login from '../login/login-right'
-import Todo from '../todo/todo'
+import Login from '../login/login'
+import Todo from '../todo/lista'
 
 
 export default props => (
-    <BrowserRouter history={hashHistory}>
-        <Route path="/" component={Login}></Route>
-        <Route path="/lista" component={Todo}></Route>
+    <BrowserRouter>
+        <Switch>
+           <Route path='/' component={Login}></Route>
+           <Route path='/todo' component={Todo}></Route>
+        </Switch>  
     </BrowserRouter>
 )
