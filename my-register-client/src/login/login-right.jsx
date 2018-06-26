@@ -17,10 +17,10 @@ export default props =>
         </div>
             
         <br/>
-        <Link className="btn btn-primary btn-lg"
-            to="/lista">
+        <button className="btn btn-primary btn-lg"
+            to="/lista" onClick={}>
              Sign in  <span className="fa fa-laptop"></span>     
-        </Link>
+        </button>
     </form>
 )
 

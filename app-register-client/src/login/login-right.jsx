@@ -1,29 +1,35 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
+import Button from '../templae/button'
+import { changeUsername, changePassword } from './loginActions'
 
-export default props => 
+const LoginForm = props => 
 (
     <form className="form-login">
         <div className="form-group">
             <label className=""><strong>Username</strong></label> <br/>
             <input type="text" className="inputs" 
-                   onChange={props.handleUsernameChange}/>
+                   value={props.username}
+                   onChange={props.changeUsername}/>
         </div>
         <div className="form-group">
             <label className=""><strong>Password</strong></label> <br/>
             <input type="password" className="inputs" 
-                   onChange={props.handlePasswordChange}/>
+                   value={props.password}
+                   onChange={props.changePassword}/>
         </div>
             
         <br/>
-        <Link className="btn btn-primary btn-lg"
-            to="/lista">
-            <span className="fa fa-laptop"></span>&ensp;
-            <strong> Sign in</strong>         
-        </Link>
+        <Button style='btn-primary btn-lg' titulo='Sign in'
+             onClick={props.handleLogar}>
+        </Button>
     </form>
 )
 
-
-//onClick={props.handleLogar}
+const mapStateProps = state => (
+    {username: state.login.username, password: state.login.password}
+)
+const mapDispathProps = dispath => bindActionCreators({ changeUsername, changePassword }, dispath)
+export default connect(mapStateProps,mapDispathProps)(LoginForm)

@@ -48,6 +48,7 @@ export default class Todo extends Component{
     }
 
     handleClear() {
+        //alert(this.state.desc)
         this.refresh()
         this.setState({desc: ''})
     }
