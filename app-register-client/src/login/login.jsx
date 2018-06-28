@@ -10,11 +10,8 @@ class Login extends Component {
     constructor(props){
         super(props)
 
-        this.state = { username: '', password: '' }
-
+        //this.state = { username: '', password: '' }
         this.handleLogar = this.handleLogar.bind(this)
-     //   this.handleUsername = this.handleUsername.bind(this)
-//this.handlePassword = this.handlePassword.bind(this)
 
     }
     handleLogar(){
@@ -29,10 +26,8 @@ class Login extends Component {
                 </div>
                 <div className="col-md-6 col-lg-6">
                    <LoginRight
-                        username={this.state.username}
-                        password={this.state.password}
-                        handleUsernameChange={this.handleUsername}
-                        handlePasswordChange={this.handlePassword}
+                        //username={this.state.username}
+                        //password={this.state.password}          
                         handleLogar={this.handleLogar}
                     />  
                 </div>    

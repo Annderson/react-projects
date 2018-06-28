@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Button from '../templae/button'
 import { changeUsername, changePassword } from './loginActions'
+
+class LoginForm extends Component {
+    constructor(props){
+        super(props)
+    }
+}
 
 const LoginForm = props => 
 (
