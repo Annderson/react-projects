@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import Keycloak from 'keycloak-js';
-
+import Keycloak from 'keycloak-js'
+import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
 class TesteHome extends Component {

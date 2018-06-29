@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Switch, Route, Redirect } from 'react-router-dom'
 
-//import logo from './logo.svg';
 import './App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
-//import Login from '../login/login';
-//import Lista from '../lista/lista';
 
-import TesteLogin from './TesteLogin'
-import TesteHome from '../auth-keycloak/TesteHome'
+
+import TesteLogin from '../login-test/TesteLogin'
+import Auth from '../auth-keycloak/auth'
 
 
 class App extends Component {
@@ -19,7 +17,7 @@ class App extends Component {
             <BrowserRouter>
                 <div className="container">
                     <Switch>
-                        <Route exact={true} path="/" component={TesteHome}/>
+                        <Route exact={true} path="/" component={Auth}/>
                         <Route path="/home" component={TesteLogin}/>
                         <Redirect to="/"/>
                     </Switch>
