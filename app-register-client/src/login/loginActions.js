@@ -14,9 +14,14 @@ export const changePassword = event => ({
 
 export const search = () => {
     const request = axios.get(`${URL}?sort=`)
-    console.log(request)
-    return {
-        type: 'LOGINS_SEARCH',
-        payload: request
+    return { type: 'LOGINS_SEARCH', payload: request }
+}
+
+export const logar = (username, password) => {
+
+    return dispatch => {
+        axios.post(URL, { username, password })
+            .then(resp => dispatch({ type: 'LOGINS_ADDED', payload: resp.data }))
+            .then(resp => dispatch(search()))
     }
 }
