@@ -3,15 +3,18 @@ import 'modules/font-awesome/css/font-awesome.min.css'
 import '../template-css/style-list.css'
 
 import React from 'react'
-import  Menu from '../template-html/menu'
-import Routes from './routes'
+import MultiCheckbox from './multiselect-checkbox'
+//import  Menu from '../template-html/menu'
+//import Routes from './routes'
 
 
 
 export default props => (
     <div className="container">
-       <Menu/>
-       <Routes/>
+       <MultiCheckbox/>
     </div>
     
 )
+
+/* <Menu/>
+       <Routes/>*/

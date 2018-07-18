@@ -10,13 +10,21 @@ class TesteHome extends Component {
   }
 
   componentDidMount() {
-    const keycloak = Keycloak({
+    /*const keycloak = Keycloak({
         "realm": "MyRegister",
         "url": "http://localhost:8080/auth",
         "ssl-required": "external",
         "clientId": "my-register-react",
         "public-client": true,
         "confidential-port": 0
+    });*/
+    const keycloak = Keycloak({
+       "realm": "Venturus",
+       "url": "http://localhost:8080/auth",
+       "ssl-required": "external",
+       "clientId": "frontend-sara",
+       "public-client": true,
+       "confidential-port": 0
     });
     keycloak.init({onLoad: 'login-required'}).then(authenticated => {
       this.setState({ keycloak: keycloak, authenticated: authenticated })
