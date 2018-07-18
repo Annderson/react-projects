@@ -1,22 +1,17 @@
-    .body-login {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    .body-login {}
     
     .row-login {
         margin-top: 100px;
         border-radius: 10px;
+        box-shadow: 0px 0px 36px 0px #999999;
+        height: 500px;
     }
     
     .form-login {
-        margin-left: 90px;
-        width: 350px;
-        height: 450px;
-        background-color: rgb(243, 243, 243);
-        box-shadow: 0px 0px 10px black;
+        width: 450px;
+        height: 500px;
         display: flex;
+        font-family: 'Courier New';
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -39,4 +34,28 @@
     .style-font {
         margin: 50px 0px;
         font-family: 'Courier New';
+    }
+    
+    .pane-left {
+        color: white;
+        padding-top: 50px;
+        background-color: #6ca6f8;
+    }
+    
+    .pane-left p {
+        font-size: 17px;
+        margin-top: 80px;
+    }
+    
+    .linkar {
+        text-decoration: none;
+        color: yellow;
+    }
+    
+    .linkar:link {
+        text-decoration: none;
+    }
+    
+    .linkar:hover {
+        color: rgb(77, 248, 25);
     }

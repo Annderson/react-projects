@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 
 export default props => 
 (
@@ -17,8 +15,7 @@ export default props =>
         </div>
             
         <br/>
-        <button className="btn btn-primary btn-lg"
-            to="/lista" onClick={}>
+        <button className="btn btn-primary btn-lg">
              Sign in  <span className="fa fa-laptop"></span>     
         </button>
     </form>

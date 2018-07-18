@@ -33,10 +33,10 @@ class Login extends Component {
     render(){
         return(
             <div className="row row-login">
-                <div className="col-md-6 col-lg-6">
+                <div className="col-md-7 col-lg-7 pane-left">
                    <LoginLeft />
                 </div>
-                <div className="col-md-6 col-lg-6">
+                <div className="col-md-5 col-lg-5 align-items-center">
                    <LoginRight
                         handleUsernameChange={this.handleUsername}
                         handlePasswordChange={this.handlePassword}

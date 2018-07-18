@@ -2,7 +2,7 @@ import Keycloak from 'keycloak-js'
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
-class TesteHome extends Component {
+class Auth extends Component {
 
   constructor(props) {
     super(props);
@@ -44,4 +44,4 @@ class TesteHome extends Component {
     )
   }
 }
-export default TesteHome
+export default Auth
