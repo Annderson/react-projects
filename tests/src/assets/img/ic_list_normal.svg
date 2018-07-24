@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ddd;
+      }
+    </style>
+  </defs>
+  <g id="ic_list_normal" transform="translate(-1036 -58)">
+    <rect id="Rectangle_290" data-name="Rectangle 290" class="cls-1" width="24" height="3.84" transform="translate(1036 58)"/>
+    <rect id="Rectangle_290-2" data-name="Rectangle 290" class="cls-1" width="24" height="3.84" transform="translate(1036 64.72)"/>
+    <rect id="Rectangle_290-3" data-name="Rectangle 290" class="cls-1" width="24" height="3.84" transform="translate(1036 71.44)"/>
+    <rect id="Rectangle_290-4" data-name="Rectangle 290" class="cls-1" width="24" height="3.84" transform="translate(1036 78.16)"/>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf)
+}
+
+.sidebar {
+    width: 122px;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to left, #444444, #2e2e2e);
+}
+
+.sidenav {
+    padding: 0;
+    width: 122px;
+    list-style-type: none;
+}
+
+.sidenav li {
+    width: 122px;
+    height: 122px;
+}
+
+.first-link {
+    border-bottom: 1px solid #aaa;
+    opacity: 1;
+}
+
+.sidenav li a {
+    padding: 33px 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    font-family: Lato;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav li a:hover {
+    opacity: 1;
+    color: #1de9b6;
+    border-left: 4px solid #1abc9c;
+    padding-right: 4px;
+}
+
+.sidebar .sidenav .active {
+    opacity: 1;
+    color: #1de9b6;
+    padding-right: 4px;
+    border-left: 4px solid #1abc9c;
+}
+
+.landing {
+    background-image: url(../assets/img/login_logo_vnt.svg);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 50px;
+    margin: 6px auto;
+}
+
+.projects {
+    background-image: url("../assets/img/ic_projetos_normal.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.employees {
+    background-image: url("../assets/img/ic_colaboradores_normal.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+
+/*hover effect menu options */
+
+.sidenav li a:hover>.landing {
+    background-image: url(../assets/img/ic_logo_vnt_selected.svg);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.sidenav li a:hover>.projects {
+    background-image: url("../assets/img/ic_projetos_selected.svg");
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.sidenav li a:hover>.employees {
+    background-image: url("../assets/img/ic_colaboradores_selected.svg");
+    background-size: 40px;
+    width: 40px;
+    height: 35px;
+}
+
+
+/*active effect menu options */
+
+.sidebar .sidenav .active>.landing {
+    background-image: url(../assets/img/ic_logo_vnt_selected.svg);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.sidebar .sidenav .active>.projects {
+    background-image: url("../assets/img/ic_projetos_selected.svg");
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.sidebar .sidenav .active>.employees {
+    background-image: url("../assets/img/ic_colaboradores_selected.svg");
+    background-size: 40px;
+    width: 40px;
+    height: 35px;
+}

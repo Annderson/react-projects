@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf)
+}
+
+.email {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    border-radius: 70%;
+    height: 36px;
+    width: 36px;
+}
+
+.name {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.name:hover {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.account {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.cost-center {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.executive-manager {
+    font-family: Lato;
+    color: #CAC5B1;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.start-end {
+    font-family: Lato;
+    color: #CAC5B1;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.date-start-end {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.end {
+    text-align: right;
+}
+
+.date-format {
+    min-width: 200px;
+}
+
+.border-executive-manager{
+    margin-top: 15px;
+    border-bottom: solid 1px #1de9b6;
+}
+
+.container {
+    margin: 30px;
+}
+
+.border-projects {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.box-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    border-radius: 0%;
+    margin-top: 30px;
+    margin-right: 10px;
+    box-shadow: 1px 2px 5px 1px gray;
+    
+}
+
+
+.hold-cards {
+    margin-top: 21px;
+    margin-left: 5px;
+}
+
+.hold-card {
+    margin-bottom: 16px;
+}
+
+.rectangle {
+    background-color: #FFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 16px;
+    transition: 0.3s ease-in-out
+    
+}
+
+.rectangle:hover {
+    background-color: #3A3831;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 16px;
+}
+
+.rectangle:hover .name{
+    color: #1de9b6;
+}
+
+.rectangle:hover .account{
+    color: #ffffff;
+}
+
+.rectangle:hover .cost-center{
+    color: #ffffff;
+}
+
+.rectangle:hover .executive-manager{
+    color: #ffffff;
+}
+
+.rectangle:hover .start-end{
+    color: #1de9b6;
+}
+
+.rectangle:hover .date-start-end{
+    color: #ffffff;
+}
+
+.hold-initials {
+    margin-top: 18px;
+    display: table;
+    /* width: 100%; */
+}
+
+.initials {
+    font-size: 36px;
+    color: #1de9b6;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-size: 36px;
+    background-color: #F8F8F8;
+    text-align: center;
+    width: 6pc;
+    height: 6pc;
+    color: #1de9b6;
+}
+
+.start-border{
+    border-right: solid 1px #dddddd;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

@@ -1,0 +1,31 @@
+{
+    "name": "vnt-sara-ui",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
+        "bootstrap": "^4.1.1",
+        "font-awesome": "^4.7.0",
+        "keycloak-js": "4.0.0-beta.2",
+        "lodash": "^4.17.10",
+        "moment": "^2.22.2",
+        "react": "16.4.1",
+        "react-bootstrap-multiselect": "2.4.1",
+        "react-dom": "16.4.1",
+        "react-redux": "5.0.7",
+        "react-router-dom": "4.3.1",
+        "react-scripts": "1.1.4",
+        "react-select": "^1.2.1",
+        "redux": "^4.0.0",
+        "redux-multi": "^0.1.12",
+        "redux-promise": "^0.6.0",
+        "redux-thunk": "^2.3.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}

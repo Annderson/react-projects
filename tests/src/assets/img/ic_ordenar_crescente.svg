@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25.171">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1de9b6;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ic_ordenar_crescente" transform="translate(-783.757 -385.243)">
+    <path id="Path_1193" data-name="Path 1193" class="cls-1" d="M477,1730l6,6,6-6" transform="translate(313 -1327)"/>
+    <path id="Path_1194" data-name="Path 1194" class="cls-1" d="M483,1745.556,498.556,1730" transform="translate(2371.584 1279.005) rotate(135)"/>
+  </g>
+</svg>
