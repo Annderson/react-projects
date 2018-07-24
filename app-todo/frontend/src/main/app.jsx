@@ -1,5 +1,7 @@
 import 'modules/bootstrap/dist/css/bootstrap.min.css'
 import 'modules/font-awesome/css/font-awesome.min.css'
+import 'react-bootstrap-multiselect/css/bootstrap-multiselect.css'
+
 import '../template-css/style-list.css'
 
 import React from 'react'

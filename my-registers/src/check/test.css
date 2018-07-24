@@ -11,11 +11,20 @@
     border: none;
 }
 
-.options {
-    margin-top: -35px;
-    background-color: #fff;
+.options{
+    display: none;
     padding: 10px 20px;
     width: 100%;
+}
+
+.btn-select:focus{
+    outline: 0;
+    opacity: 0;
+}
+
+.btn-select:focus > .options:focus {
+    margin-top: -40px;
+    background-color: #fff;
     list-style-type: none;
     top: 0px;
 }
