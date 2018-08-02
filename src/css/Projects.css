@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf)
+}
+
+.email {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    border-radius: 70%;
+    height: 36px;
+    width: 36px;
+}
+
+.name {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.name:hover {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.account {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.cost-center {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.executive-manager {
+    font-family: Lato;
+    color: #CAC5B1;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.start-end {
+    font-family: Lato;
+    color: #CAC5B1;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.date-start-end {
+    font-family: Lato;
+    color: #555146;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.end {
+    text-align: right;
+}
+
+.date-format {
+    min-width: 200px;
+}
+
+.border-executive-manager {
+    margin-top: 15px;
+    border-bottom: solid 1px #1de9b6;
+}
+
+.container {
+    margin: 30px;
+}
+
+.border-projects {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.box-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    border-radius: 0%;
+    margin-top: 30px;
+    margin-right: 10px;
+    box-shadow: 1px 2px 5px 1px gray;
+}
+
+.hold-cards {
+    margin-top: 21px;
+    margin-left: 5px;
+}
+
+.hold-card {
+    margin-bottom: 16px;
+}
+
+.quebra {
+    word-wrap: break-word;
+}
+
+.rectangle {
+    width: 100%;
+    height: 200px;
+    background-color: #FFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.rectangle:hover {
+    background-color: #3A3831;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    padding: 16px;
+}
+
+.rectangle:hover .name {
+    color: #1de9b6;
+}
+
+.rectangle:hover .account {
+    color: #ffffff;
+}
+
+.rectangle:hover .cost-center {
+    color: #ffffff;
+}
+
+.rectangle:hover .executive-manager {
+    color: #ffffff;
+}
+
+.rectangle:hover .start-end {
+    color: #1de9b6;
+}
+
+.rectangle:hover .date-start-end {
+    color: #ffffff;
+}
+
+.hold-initials {
+    margin-top: 18px;
+    display: table;
+    /* width: 100%; */
+}
+
+.initials2 {
+    font-size: 36px;
+    color: #1de9b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    border-radius: 100%;
+    background-size: 36px;
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    color: #1de9b6;
+    line-height: 0;
+}
+
+.initials {
+    font-size: 36px;
+    color: #1de9b6;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-size: 36px;
+    background-color: #F8F8F8;
+    text-align: center;
+    width: 6pc;
+    height: 6pc;
+    color: #1de9b6;
+    margin: 0 auto;
+}
+
+.start-border {
+    border-right: solid 1px #dddddd;
+}
+
+.truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Project ListView */
+
+.initials-list-view {
+    font-size: 30px;
+    color: #1de9b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #F8F7F1;
+    background-size: cover;
+    text-align: center;
+    padding: 5px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    color: #1de9b6;
+}
+
+.row-list-header {
+    color: #C2BCA8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    height: 62px;
+    margin: 0;
+    padding: 0 12px;
+}
+
+.row-list-view {
+    font-size: 17px;
+    font-family: Lato;
+    text-align: center;
+    color: #605A4F;
+    background-color: #FFFFFF;
+    height: 88px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 12px 0;
+    border-bottom: solid 1px #79ECAE;
+    transition: 0.3s ease-in-out;
+}
+
+.properties-project {
+    color: #605A4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-list-view:hover {
+    color: #1de9b6;
+    background-color: #3A3831;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.row-list-view:hover .properties-project {
+    color: #1de9b6;
+}
+
+.border-list-view {
+    border-left: solid 1px #dddddd;
+}

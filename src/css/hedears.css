@@ -1,0 +1,289 @@
+                @font-face {
+                    font-family: Lato;
+                    src: url(../assets/fonts/Lato-Regular.ttf);
+                }
+                
+                .header {
+                    height: 126px;
+                    margin-left: 17px;
+                    font-family: Lato;
+                }
+                
+                .header-border {
+                    border-bottom: 1px solid #1abc9c;
+                }
+                
+                .header-version1 h1 {
+                    font-size: 34px;
+                    padding: 45px 0px;
+                    font-weight: bold;
+                }
+                
+                .header-version1>.title1 {
+                    border: none;
+                }
+                
+                .title1 {
+                    height: 126px;
+                    border-right: 1px solid #ddd;
+                }
+                
+                .title1 h1 {
+                    font-size: 2.2em;
+                    font-weight: bold;
+                    padding-top: 45px;
+                }
+                
+                .title2 {
+                    border-right: 1px solid #ddd;
+                    height: 126px;
+                    padding: 6% 0%;
+                }
+                
+                .img-back {
+                    width: 24px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                    background-image: url(../assets/img/ic_back.svg);
+                    background-size: 24px;
+                }
+                
+                .btn-back {
+                    border: none;
+                    margin: 35% 0px;
+                    background-color: #F8F8F8;
+                }
+                
+                .header-info-projects h5 {
+                    margin: 0%;
+                    font-weight: 900;
+                    font-size: (1.5em + 1vw);
+                }
+                
+                .header-info-projects h6 {
+                    margin: 0%;
+                    font-size: 85%;
+                }
+                
+                .div-btn-add {
+                    /* width: 5%;*/
+                    border-left: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .btn-add {
+                    cursor: pointer;
+                    margin: 30px 0px;
+                    border: none;
+                    background-image: url(../assets/img/ic_add.svg);
+                    background-size: 68px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    box-shadow: 0 8px 16px 0 rgba(29, 207, 169, 0.5);
+                    width: 68px;
+                    height: 68px;
+                    border-radius: 61px;
+                }
+                /*Options to change the visualization*/
+                
+                .option-visualization {
+                    /* width: 9%;*/
+                    height: 126px;
+                    border-right: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+                .option-visualization-hide {
+                    display: none;
+                }
+                
+                .btn-grid-selected {
+                    margin: 0px 5px;
+                    background-image: url(../assets/img/ic_grid_selected.svg);
+                    background-repeat: no-repeat;
+                    background-size: 28px;
+                    border: none;
+                    background-color: #F8F8F8;
+                    width: 29px;
+                    height: 29px;
+                }
+                
+                .btn-grid-normal {
+                    margin: 0px 5px;
+                    background-image: url(../assets/img/ic_grid_normal.svg);
+                    background-repeat: no-repeat;
+                    background-size: 28px;
+                    border: none;
+                    background-color: #F8F8F8;
+                    width: 29px;
+                    height: 29px;
+                }
+                
+                .btn-list-normal {
+                    margin: 0px 5px;
+                    background-image: url(../assets/img/ic_list_normal.svg);
+                    background-repeat: no-repeat;
+                    background-size: 28px;
+                    border: none;
+                    background-color: #F8F8F8;
+                    width: 29px;
+                    height: 29px;
+                }
+                
+                .btn-list-selected {
+                    margin: 0px 5px;
+                    background-image: url(../assets/img/ic_list_selected.svg);
+                    background-repeat: no-repeat;
+                    background-size: 28px;
+                    border: none;
+                    background-color: #F8F8F8;
+                    width: 29px;
+                    height: 29px;
+                }
+                /* Fields of order for account */
+                
+                .options-search {
+                    /*width: 37%;*/
+                    height: 126px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid #ddd;
+                }
+                
+                .options-search-hide {
+                    display: none;
+                }
+                
+                .btn-order-asc {
+                    background-image: url(../assets/img/ic_ordenar_crescente.svg);
+                    background-repeat: no-repeat;
+                    background-color: #F8F8F8;
+                    background-size: 25px;
+                    margin-top: 45px;
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 25px;
+                    border: none;
+                }
+                
+                .btn-order-desc {
+                    background-image: url(../assets/img/ic_ordenar_decrescente.svg);
+                    background-repeat: no-repeat;
+                    background-color: #F8F8F8;
+                    background-size: 25px;
+                    margin-top: 45px;
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 25px;
+                    border: none;
+                }
+                
+                .select-search {
+                    margin: 0px 7px;
+                    width: 44%;
+                }
+                
+                .options-search div select {
+                    width: 100%;
+                    height: 48px;
+                    position: relative;
+                    background-color: #ffffff;
+                    border: solid 1px #dddddd;
+                }
+                
+                .options-search div select option {
+                    height: 20px;
+                    font-family: Lato;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.21;
+                    padding: 20px 0px;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #444444;
+                }
+                
+                .options-search div label {
+                    height: 20%;
+                    margin-bottom: 12px;
+                    font-family: Lato;
+                    font-size: 1.1vw;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.3;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #444444;
+                }
+                
+                .text-search {
+                    /*width: 35%;*/
+                    height: 126px;
+                    padding: 16px 20px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .text-search-hide {
+                    display: none;
+                }
+                
+                .text-search label {
+                    width: 87px;
+                    height: 24px;
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.3;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #444444;
+                }
+                
+                .hold-search {
+                    width: 100%;
+                    position: relative;
+                    border: none;
+                    background-color: #F8F8F8;
+                }
+                
+                .field-search {
+                    width: 100%;
+                    height: 48px;
+                    border: none;
+                    padding-left: 40px;
+                    margin-top: 8px;
+                    background-color: #F8F8F8;
+                    border-bottom: 1px solid #dddddd;
+                }
+                
+                .search-img {
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    top: 15px;
+                    left: 5px;
+                    background-repeat: no-repeat;
+                    background-image: url(../assets/img/ic-search.svg);
+                    background-size: 25px;
+                }
+                
+                .field-search:focus {
+                    outline: 0;
+                    padding-left: 5px;
+                }
+                
+                .field-search:focus+.search-img {
+                    display: none;
+                }

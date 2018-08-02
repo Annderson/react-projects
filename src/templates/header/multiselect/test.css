@@ -1,0 +1,56 @@
+.combo {
+    position: relative;
+    width: 259px;
+    height: 48px;
+    margin: 0;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+}
+
+.btn-select {
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    width: 143.3px;
+    height: 19px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    padding: 15px 10px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+}
+
+.options {
+    display: none;
+}
+
+.options li label {
+    width: 143.3px;
+    height: 19px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+}
+
+.btn-select:focus {
+    outline: 0;
+}
+
+.btn-select:hover>.options li {
+    background-color: #fff;
+    list-style-type: none;
+    top: 0px;
+    padding: 10px 20px;
+    width: 100%;
+}
